@@ -1,0 +1,213 @@
+TC_FACEBOOK_REG_001
+
+Title: Verify registration with valid credentials
+
+Preconditions:
+	•	User is not logged in
+	•	Sign up page is opened
+
+Test Data:
+	•	Name: Gokhan
+	•	Last Name: Ergucel
+	•	Birthdate: 01/01/2000
+	•	Email: test@mail.com
+	•	Password: Test@123
+
+Test Steps:
+	1.	Enter a valid name
+	2.	Enter a valid last name
+	3.	Enter a valid birthday
+	4.	Enter a valid gender
+	5.	Enter a valid phone number or email
+	6.	Enter a valid password
+	7.	Click the Sign Up button
+
+Expected Result:
+User is redirected to email or phone number verification page
+
+Actual Result:
+Email or phone number verification page opened
+
+Priority: High
+Severity: Critical
+Status: Passed
+
+
+
+TC_FACEBOOK_REG_002
+
+Title: Verify registration with invalid email
+
+Preconditions:
+	•	User is not logged in
+	•	Sign up page is opened
+
+Test Data:
+	•	Name: Gokhan
+	•	Last Name: Ergucel
+	•	Birthdate: 01/01/2000
+	•	Email: test@com
+	•	Password: Test@123
+
+Test Steps:
+	1.	Enter a valid name
+	2.	Enter a valid last name
+	3.	Enter a valid birthday
+	4.	Enter a valid gender
+	5.	Enter a invalid email
+	6.	Enter a valid password
+	7.	Click the Sign Up button
+
+Expected Result:
+User should be able to see invalid email or phone number error message
+
+Actual Result:
+User sees invalid email or phone number error
+
+Priority: High
+Severity: Critical
+Status: Passed
+
+
+
+TC_FACEBOOK_REG_003
+
+Title: Verify registration with weak password
+
+Preconditions:
+	•	User is not logged in
+	•	Sign up page is opened
+
+Test Data:
+	•	Name: Gokhan
+	•	Last Name: Ergucel
+	•	Birthdate: 01/01/2000
+	•	Email: test@mail.com
+	•	Password: 123456
+
+Test Steps:
+	1.	Enter a valid name
+	2.	Enter a valid last name
+	3.	Enter a valid birthday
+	4.	Enter a valid gender
+	5.	Enter a valid phone number or email
+	6.	Enter a invalid password
+	7.	Click the Sign Up button
+
+Expected Result:
+User should see weak password error message
+
+Actual Result:
+User sees weak password error message
+
+Priority: High
+Severity: Critical
+Status: Passed
+
+
+
+TC_FACEBOOK_REG_004
+
+Title: Verify registration with existing email
+
+Preconditions:
+	•	User is not logged in
+	•	Sign up page is opened
+
+Test Data:
+	•	Name: Gokhan
+	•	Last Name: Ergucel
+	•	Birthdate: 01/01/2000
+	•	Email: test@mail.com
+	•	Password: Test@123
+
+Test Steps:
+	1.	Enter a valid name
+	2.	Enter a valid last name
+	3.	Enter a valid birthday
+	4.	Enter a valid gender
+	5.	Enter a existing email
+	6.	Enter a valid password
+	7.	Click the Sign Up button
+
+Expected Result:
+User should see existing email error message
+
+Actual Result:
+User sees existing email error message
+
+Priority: High
+Severity: Critical
+Status: Passed
+
+
+
+TC_FACEBOOK_REG_005
+
+Title: Verify registration with password below minimum length
+
+Preconditions:
+	•	User is not logged in
+	•	Sign up page is opened
+
+Test Data:
+	•	Name: Gokhan
+	•	Last Name: Ergucel
+	•	Birthdate: 01/01/2000
+	•	Email: test@mail.com
+	•	Password: 123
+
+Test Steps:
+	1.	Enter a valid name
+	2.	Enter a valid last name
+	3.	Enter a valid birthday
+	4.	Enter a valid gender
+	5.	Enter a valid phone number or email
+	6.	Enter a password shorter than minimum length (min 6 assumed)
+	7.	Click the Sign Up button
+
+Expected Result:
+User should see password below minimum length error message
+
+Actual Result:
+User sees a password minimum length error message
+
+Priority: High
+Severity: Critical
+Status: Passed
+
+
+
+TC_FACEBOOK_REG_006
+
+Title: Verify registration with password above maximum length
+
+Preconditions:
+	•	User is not logged in
+	•	Sign up page is opened
+
+Test Data:
+	•	Name: Gokhan
+	•	Last Name: Ergucel
+	•	Birthdate: 01/01/2000
+	•	Email: test@mail.com
+	•	Password: Test@123Test@123Test@123Test@123Test@123Test@123Test@123Test@123Test@123Test@123Test@123Test@123Test@123Test@123Test@123
+
+Test Steps:
+	1.	Enter a valid name
+	2.	Enter a valid last name
+	3.	Enter a valid birthday
+	4.	Enter a valid gender
+	5.	Enter a valid phone number or email
+	6.	Enter a password longer than maximum length
+	7.	Click the Sign Up button
+
+Expected Result:
+User should be see password above maximum length error message
+
+Actual Result:
+User sees password exceeds maximum length error message
+
+Priority: High
+Severity: Critical
+Status: Passed
